@@ -49,3 +49,17 @@ console.log(choose_number);
 console.log("the data type of choose_number is ", typeof choose_number);
 const result = choose_number + choose_number2;
 console.log("the sun is ", result);
+
+// Develop a program that evaluates complex mathematical expressions involving addition, subtraction, multiplication, and division, and prints the result.
+
+// area of a triangle
+// 1/2 *base*height
+
+//SI=P×r×t
+
+const base = 1;
+const height = 2;
+
+const areaOfTriangle = (base * height) / 2;
+
+console.log("The Area of Variable =", areaOfTriangle);

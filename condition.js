@@ -158,3 +158,5 @@ console.log("length of people => ", lengthofpersons);
 
 const hobby = people[3].hobby;
 console.log("avas hobby is ", hobby);
+
+//if west shares 500 naira to all people aged 20 and above, how many students will get the money and how much in total will west spend..
