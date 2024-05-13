@@ -160,3 +160,59 @@ const hobby = people[3].hobby;
 console.log("avas hobby is ", hobby);
 
 //if west shares 500 naira to all people aged 20 and above, how many students will get the money and how much in total will west spend..
+
+// forloops
+for (initialexpression; condition; updateexpression) {
+  // for the loop body
+}
+
+// const n = 5;
+
+// // loop from 1 to 5 and logsomething as it loops
+// for (let m = 1; m <= n; m++) {
+//   console.log("this is javascript");
+// }
+
+// const score = 50;
+
+// // if score is below 40 log failed
+// // if score is above 40 log passed
+
+// const scores = [10, 20, 30, 40, 42, 50];
+// for (let m = 0; m < scores.length; m++) {
+//   if (scores[m] > 40) {
+//     console.log("passed");
+//   } else {
+//     console.log("failed");
+//   }
+// }
+
+// structire for a while loop
+// while (condition) {
+//   // body of the while
+// }
+
+// const n = 5;
+// while (n <= 10) {
+//   console.log("this is java");
+//   n++;
+// }
+
+// // do while loop
+// do {
+//   console.log("this is javascript");
+//   n++;
+// } while (n <= 5);
+
+// find the sum of positive numbers entered
+
+let sum = 0;
+let number = 0;
+
+do {
+  sum += number * 3;
+  // sum = sum + number
+  number = parseInt(prompt("Enter number.."));
+} while (number >= 0 && number !== 0);
+
+console.log("the sum is  ", sum);
