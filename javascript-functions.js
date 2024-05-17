@@ -94,3 +94,71 @@ function generatePassword(length) {
 }
 
 generatePassword(10);
+
+const people = [
+  {
+    name: "Miles",
+    age: 12,
+    student: true,
+    hobby: "Problem solving with code",
+  },
+  {
+    name: "Sophia",
+    age: 25,
+    student: false,
+    hobby: "Painting landscapes",
+  },
+  {
+    name: "Ethan",
+    age: 18,
+    student: true,
+    hobby: "Playing guitar",
+  },
+  {
+    name: "Ava",
+    age: 30,
+    student: false,
+    hobby: "Reading novels",
+  },
+  {
+    name: "Noah",
+    age: 22,
+    student: true,
+    hobby: "Photography",
+  },
+  {
+    name: "Olivia",
+    age: 27,
+    student: false,
+    hobby: "Traveling",
+  },
+  {
+    name: "Liam",
+    age: 35,
+    student: false,
+    hobby: "Cooking gourmet meals",
+  },
+  {
+    name: "Emma",
+    age: 20,
+    student: true,
+    hobby: "Dancing",
+  },
+];
+
+function average2(numberArray) {
+  const filteredPeople = numberArray.filter(
+    (aperson) => aperson.student === true
+  );
+  console.log("the filtered people => ", filteredPeople);
+
+  const sum = numberArray.reduce((acc, curr) => acc + curr.age, 0);
+  const z = sum / numberArray.length;
+  console.log("all people age average >=", z);
+
+  const sum2 = filteredPeople.reduce((acc, curr) => acc + curr.age, 0);
+  const z2 = sum2 / filteredPeople.length;
+  console.log("all student people age average >=", z2);
+}
+
+average2(people);

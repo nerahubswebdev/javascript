@@ -216,3 +216,66 @@ do {
 } while (number >= 0 && number !== 0);
 
 console.log("the sum is  ", sum);
+
+//switch statement
+switch (variable / expression) {
+  case value1:
+    //body of value 1
+    break;
+
+  case value2:
+    //body of value 2
+    break;
+
+  default:
+  //body of the default
+}
+
+// example with switch statement
+let t = 3;
+
+switch (t) {
+  case "1":
+    t = 1;
+
+    break;
+
+  case 2:
+    t = 2;
+    break;
+  case "3":
+    t = 3;
+    break;
+  case 3:
+    t = 3;
+
+    break;
+  default:
+    console.log("nothing worked!!");
+}
+
+const operator = prompt("Enter operator either + - * /");
+
+const num1 = parseInt(prompt("enter first number"));
+const num2 = parseInt(prompt("enter second number"));
+
+switch (operator) {
+  case "+":
+    result = num1 + num2;
+    console.log(`the sum of numbers is = ${result}`);
+    break;
+  case "-":
+    result = num1 - num2;
+    console.log(`the difference of numbers is = ${result}`);
+    break;
+  case "*":
+    result = num1 * num2;
+    console.log(`the product of numbers is = ${result}`);
+    break;
+  case "/":
+    result = num1 / num2;
+    console.log(`the quotien of numbers is = ${result}`);
+    break;
+  default:
+    console.log("invalid operator");
+}
